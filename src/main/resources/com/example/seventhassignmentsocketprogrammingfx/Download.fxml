@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seventhassignmentsocketprogrammingfx.helloController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2c358b1100e36b8cca7944a9100139ae.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="14.0" text="Download Files" textFill="#dadeeb">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Line endX="335.6666564941406" endY="7.62939453125E-6" layoutX="101.0" layoutY="60.0" startX="-100.0" stroke="#d1c7ba" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="35.0" layoutY="74.0" opacity="0.82" prefHeight="506.0" prefWidth="368.0">
+         <content>
+            <VBox fx:id="downloadList" prefHeight="507.0" prefWidth="367.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="fileIndexBTN" layoutX="35.0" layoutY="597.0" prefHeight="26.0" prefWidth="334.0" promptText="Choose the indext number of the file you want to download" />
+      <Button fx:id="next2BTN" layoutX="381.0" layoutY="597.0" mnemonicParsing="false" onAction="#switchToFileDownload" style="-fx-background-color: f5f5f5; -fx-background-radius: 20;" text="Done" />
+      <Button fx:id="back2BTN" layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToClientMenu" style="-fx-background-color: f5f5f5; -fx-background-radius: 15;" text="Back">
+         <font>
+            <Font size="13.5" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

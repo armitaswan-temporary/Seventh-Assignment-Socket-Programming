@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seventhassignmentsocketprogrammingfx.helloController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="549.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2c358b1100e36b8cca7944a9100139ae.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="185.0" layoutY="7.0" text="Chat" textFill="#dadeeb">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Line endX="412.6666564941406" endY="-60.400001525878906" layoutX="23.0" layoutY="113.0" startX="-23.999975204467773" startY="-60.400001525878906" stroke="#dcd3d3" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="21.0" layoutY="69.0" opacity="0.82" prefHeight="518.0" prefWidth="394.0">
+         <content>
+            <VBox fx:id="chatBox" prefHeight="523.0" prefWidth="394.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="newMSGBTN" layoutX="21.0" layoutY="600.0" prefHeight="31.0" prefWidth="340.0" promptText="New Messsage">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendBTN" layoutX="366.0" layoutY="599.0" mnemonicParsing="false" onAction="#sendMSG" prefHeight="31.0" prefWidth="57.0" style="-fx-background-radius: 15; -fx-background-color: f5f5f5;" text="Send">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="back1BTN" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToClientMenu" opacity="0.82" prefHeight="30.0" prefWidth="58.0" style="-fx-background-radius: 15; -fx-background-color: f5f5f5;" text="Back">
+         <font>
+            <Font size="13.5" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

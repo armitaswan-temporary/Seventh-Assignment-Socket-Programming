@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seventhassignmentsocketprogrammingfx.helloController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="722.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2c358b1100e36b8cca7944a9100139ae.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="joinChatBTN" layoutX="164.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchtoChat" style="-fx-background-radius: 20; -fx-background-color: f5f5f5;" text="Join Chat">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="goDownloadBTN" layoutX="137.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchtoDownload" style="-fx-background-radius: 20; -fx-background-color: f5f5f5;" text="Download Files">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitBTN" layoutX="189.0" layoutY="393.0" mnemonicParsing="false" onAction="#exitProgram" style="-fx-background-radius: 20; -fx-background-color: f5f5f5;" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
